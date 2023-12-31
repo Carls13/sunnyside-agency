@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+}
+
+.background-container {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+    width: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.triangle-menu, .burger-menu {
+    display: none;
+}
+
+.header-options {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-options a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Barlow;
+}
+
+.header-options button {
+    background-color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 16px;
+    font-family: Fraunces;
+    color: hsl(167, 40%, 24%);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-options button:hover {
+    filter: opacity(0.5);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-container h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: Fraunces;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services-grid div {
+    height: 100vh;
+}
+
+.services-grid .service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0px 100px;
+}
+
+.services-grid .service-card h2, .services-grid .service-card .learn-more {
+    color: hsl(212, 27%, 19%);
+    font-family: Fraunces;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.services-grid .service-card h2 {
+    font-size: 30px;
+}
+
+.services-grid .service-card .learn-more {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.services-grid .service-card p {
+    color: hsl(232, 10%, 55%);
+    font-family: Barlow;
+    font-weight: 600;
+}
+
+.service-card p {
+    margin: 30px 0;
+}
+
+.service-card h2 {
+    margin: 0;
+}
+
+.services-grid .service-empty:nth-child(2) {
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-size: cover;
+}
+
+.services-grid .service-card:nth-child(1) .learn-more:hover span {
+    border-bottom: 5px solid yellow;
+    border-radius: 4px;
+}
+
+.services-grid .service-empty:nth-child(3) {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-size: cover;
+}
+
+.services-grid .service-card:nth-child(4) .learn-more:hover span {
+    border-bottom: 5px solid palevioletred;
+    border-radius: 4px;
+}
+
+.services-grid .service-mix:nth-child(5) {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+}
+
+.services-grid .service-mix:nth-child(6) {
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+}
+
+.service-mix {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-grid .service-mix h3 {
+    margin-top: 40%;
+    color: hsl(212, 27%, 19%);
+    font-family: Fraunces;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.services-grid .service-mix p {
+    color: hsl(167, 40%, 24%);
+    font-family: Barlow;
+    font-weight: 600;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.services-grid .service-mix:nth-child(6) p {
+    color: hsl(198, 62%, 26%);
+}
+
+.testimonials-section {
+    padding: 100px;
+}
+
+.testimonials-section h3 {
+    color: hsl(232, 10%, 55%);
+    font-family: Fraunces;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.testimonials-container {
+    display: flex;
+}
+
+.testimonials-container .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 5px;
+    gap: 10px;
+    text-align: center;
+}
+
+.testimonials-container .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonial-card p {
+    color:  hsl(232, 10%, 55%);
+    font-family: Barlow;
+    font-weight: 600;
+}
+
+.testimonial-card h4 {
+    color: black;
+    font-family: Fraunces;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-grid img {
+    width: 100%;
+}
+
+footer {
+    background-color: hsl(168, 34%, 41%);
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-options {
+    display: flex;
+    gap: 45px;
+}
+
+.footer-options a {
+    text-decoration: none;
+    color: #2C7566;
+    font-family: Barlow;
+}
+
+.footer-options a:hover {
+    color: #fff;
+}
+
+.social-media-container {
+    display: flex;
+    gap: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .triangle-menu {
+        display: none;
+        position: absolute;
+        top: 7.5%;
+        right: 5vw;
+    }
+
+    .header-options {
+        position: absolute;
+        width: 90vw;
+        top: 12.5%;
+        left: 5vw;
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        padding: 20px 0;
+    }
+
+    .header-options a {
+        color: #2C7566;
+    }
+
+    .header-options button {
+        background-color: yellow;
+    }
+
+    .background-container {
+        background-image: url(./images/mobile/image-header.jpg);
+        background-size: cover;
+        background-position: 50%;
+        height: 60vh;
+        width: auto;
+    }
+
+    .hero-container h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .services-grid, .testimonials-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-grid div {
+        height: 80vh;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+
+    .services-grid .service-card {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .services-grid .service-empty:nth-child(2) {
+        background-image: url(./images/mobile/image-transform.jpg);
+        background-size: 100% 100%;
+        height: 50vh;
+        order: -1;
+    }
+    
+    .services-grid .service-empty:nth-child(3) {
+        background-image: url(./images/mobile/image-stand-out.jpg);
+        background-size: 100% 100%;
+        height: 50vh;
+    }
+    
+    .services-grid .service-mix:nth-child(5) {
+        background-image: url(./images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+    }
+    
+    .services-grid .service-mix:nth-child(6) {
+        background-image: url(./images/mobile/image-photography.jpg);
+        background-size: cover;
+    }
+
+    .services-grid .service-mix h3 {
+        margin-top: 70%;
+    }
+    
+    .testimonials-section {
+        padding: 30px 15px;
+    }
+}
